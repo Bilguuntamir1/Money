@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Neon Text</title>
+  <style>
+    body {
+      background-color: #000; /* Хар фон, неон тод харагдана */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      font-family: "Mongolian Baiti", "Arial", sans-serif;
+      color: #0ff;
+    }
+
+    .neon {
+      font-size: 2em;
+      color: #0ff;
+      text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="neon">
+    <!-- Криллээр -->
+    Сайн байна уу? <br>
+    Миний дансанд Donation хийж туслаарай! <br>
+    Iban:25000500 Данс: 5381498640 <br><br>
+
+    <!-- Үндэсний бичгээр -->
+    ᠰᠠᠶᠢᠨ ᠪᠠᠶᠢᠨ᠎ᠠ ᠤᠤ? <br>
+    ᠮᠢᠨᠤ ᠳᠠᠩᠰᠠᠨᠳ᠋ᠤ Donation ᢈᠢᠵᠦ ᠲᠤᠰᠠᠯᠠᠭᠠᠷᠠᠢ! <br>
+    Iban:᠒᠕᠐᠐᠐᠕᠐᠐ ᠳᠠᠩᠰᠠ: ᠕᠓᠘᠑᠔᠙᠘᠖᠔᠐
+  </div>
+</body>
+</html>
